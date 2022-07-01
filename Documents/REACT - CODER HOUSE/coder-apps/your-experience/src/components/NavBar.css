@@ -1,0 +1,14 @@
+.header {
+    background: url(../../public/DSCN1138-1920px.webp) no-repeat center;
+    background-size: cover;
+    min-height: 90vh;
+  }
+
+.navbar{
+    padding: 30px;
+}
+
+.collapse{
+    justify-content: end !important;
+}
+
