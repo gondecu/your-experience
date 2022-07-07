@@ -8,7 +8,15 @@
     padding: 30px;
 }
 
+.navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+    align-items: center;
+}
+
 .collapse{
     justify-content: end !important;
 }
 
+.shoppingCart{
+    font-size: 19px;
+}

@@ -1,6 +1,9 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './NavBar.css';
+import CartWidget from './CartWidget';
+import ItemListContainer from './ItemListContainer';
+
 
 function NavBar(){
     return (
@@ -15,12 +18,16 @@ function NavBar(){
                         <div className="navbar-nav">
                         <a className="nav-item nav-link active" href="#">Comidas</a>
                         <a className="nav-item nav-link" href="#">Escapadas</a>
-                        <a className="nav-item nav-link" href="#">Destacadas</a>
+                        {/* <a className="nav-item nav-link" href="#">Destacadas</a> */}
+                        <CartWidget />
                         </div>
                     </div>
                 </nav>
-                <header className="header"></header>
+                {/* <header className="header"></header> */}
+                <ItemListContainer />
         </React.Fragment>
     )
 }
+
+
 export default NavBar;
