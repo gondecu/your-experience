@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './NavBar.css';
 import CartWidget from './CartWidget';
 import ItemListContainer from './ItemListContainer';
+import ItemCounter from './ItemCounter';
 
 
 function NavBar(){
@@ -25,6 +26,7 @@ function NavBar(){
                 </nav>
                 {/* <header className="header"></header> */}
                 <ItemListContainer />
+                <ItemCounter initial={1} stock={5}/>
         </React.Fragment>
     )
 }
