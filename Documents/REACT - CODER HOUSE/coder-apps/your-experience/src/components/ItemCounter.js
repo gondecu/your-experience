@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import '../css/Counter.css';
 
 function ItemCounter({initial, stock, onAdd}){
     const [rates, setRates] = useState(initial);
@@ -18,16 +19,16 @@ function ItemCounter({initial, stock, onAdd}){
     };
 
     return (
-        <React.Fragment>
+        
             <div>
-                <div className="number">
+                <div className="carrito">
                     <button onClick={handleClickMinus} className="minus">-</button>
-                    {rates}
+                    <input>{rates}</input>
                     <button onClick={handleClickSum} className="plus">+</button>
                 </div>
                 <button onClick={onAdd}>Agregar al Carrito</button>
             </div>
-        </React.Fragment>
+       
     )
 }
 
