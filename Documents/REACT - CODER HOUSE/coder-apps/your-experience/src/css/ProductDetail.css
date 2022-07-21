@@ -41,7 +41,7 @@
 }
 
 .imagen-vino-portada{
-    height: 325px;
+    width: 100%;
 }
 
 .info-vino{
@@ -69,17 +69,17 @@
 }
 
 .descripcion{
-    background-color: #f5f5f5;
+    /* background-color: #f5f5f5; */
     color: #000;
     text-align: center;
     display:inline-block;
-    border-radius: 5px;
-    padding: 8px 10px 8px 10px;
-    margin-top: 15px;
+    /* border-radius: 5px; */
+    /* padding: 8px 10px 8px 10px; */
+    /* margin-top: 15px;
     margin-right: 20%;
-    margin-left: 20%;
+    margin-left: 20%; */
     max-width: 70%;
-    border: 1px solid #DDD
+    /* border: 1px solid #DDD */
 }
 
 .precio{
@@ -111,3 +111,12 @@
     transform: scale(1.01);
     box-shadow: 2px 2px 3px 0px rgba(68, 68, 68, 0.4);
   }
+
+@media (min-width: 900px){
+    .articulo{
+        flex-direction: row;
+    }
+    .imagen-vino-portada{
+        margin-left: 37%;
+    }
+}
